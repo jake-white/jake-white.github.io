@@ -14,7 +14,6 @@
 	var startingTime, ticks = 0;
 	var go = function() {
 		document.getElementById("b").innerHTML = "Restart";
-		document.getElementById("status").innerHTML = "Status = Alive";
 		ticks = 0;
 		for(var i = 0; i < length; ++i)
 		{
@@ -276,7 +275,6 @@ var parseYDirection = function(d)
 }
 var tick = function() 
 {
-	document.getElementById("time").innerHTML = "Lived for: " +(new Date().getTime() - startingTime)/1000 + " seconds...";
 	ticks++;
 	document.getElementById("tick").innerHTML = "Lived for: " + ticks + " ticks";
 	var decision = getDecision(); //all AI behavior should be here
@@ -317,7 +315,6 @@ var checkDeath = function()
 	if(!alive)
 	{
 		clearInterval(interval);
-		document.getElementById("status").innerHTML = "Status = Dead";
 	}
 }
 

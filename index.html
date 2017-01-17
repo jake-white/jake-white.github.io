@@ -1,18 +1,30 @@
 <html>
-<head>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<title>Jake's Github</title>
-</head>
-<div class="header"><div class="wrapper">
-	            <span class="nav"><a href="https://twitter.com/squirrelboyVGC">Twitter Page</a> | <a href="https://github.com/jake-white/VGC-Usage">GitHub Page</a></span>
-	            <div style="clear:both"></div>
-</div></div>
+	<head>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/snake.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<title>Jake's Github</title>
+	</head>
 
-<button type = "button" id = "b" onclick = "go();">Start</button>
-<p id = "status">Status = Alive</p>
-<p id = "time">Lived for: 0.0 seconds...</p>
-<p id = "tick">Lived for: 0 ticks</p>
-<canvas id = "c" width = "500" height = "500" style = "border: black 1px solid"></canvas>
-<script src="js/snake.js"></script>
+	<div class="header"><div class="wrapper">
+		            <span class="nav"><a href="https://twitter.com/squirrelboyVGC">Twitter Page</a> | <a href="https://github.com/jake-white/VGC-Usage">GitHub Page</a></span>
+		            <div style="clear:both"></div>
+	</div></div>
+
+	<body>
+		<div id="work">
+			<h1>My Work</h1>
+			<a href="http://trainertower.com/damagecalc">VGC Damage Calculator</a>
+			<a href="http://trainertower.com/usage-stats">VGC Usage Stats</a>
+			<a href="https://jake-white.github.io/VGC-Teamsheets">VGC Teamsheet Generator</a>
+			<a href="https://jake-white.github.io/bReakMyTeam">VGC bReakMyTeam</a>
+		</div>
+		<br>
+		Here's some AI Snake.
+		<button type = "button" id = "b" onclick = "go();">Start</button>
+		<p id = "tick">Lived for: 0 ticks</p>
+		<canvas id = "c" width = "500" height = "500" style = "border: black 1px solid"></canvas>
+	</body>
 </html>
 
