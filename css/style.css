@@ -70,8 +70,10 @@ li, li a{                       /* Define the formatting for the links to the la
 
 p{
     font-size: 20px;
+    margin: 10px auto;
     font-family: "Times New Roman";
     text-align: center;
+    width: 50%;
 }
 
 h2{
