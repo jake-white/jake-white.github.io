@@ -1,17 +1,28 @@
+var canvas, interval, ctx, startingLength, x, y, direction, length, columns, rows, columnSize, rowSIze, snakeX, snakeY, foodX, foodY, killTail, grid, startingTIme, ticks;
+	
+	//OLD TERRIBLE CODE FROM ANCIENT TIMES
+	//(like 4 years ago)
+	//DO NOT VENTURE FURTHER
+	//YOU HAVE BEEN WARNED
 
-	var canvas = document.getElementById("c");
-	var interval;
-	var ctx = canvas.getContext("2d");
-	var startingLength = 5;
-	var x = 0, y = 0, direction = 2;
-	var length = 5, columns = 50, rows = 50;
-	var columnSize = (canvas.width/columns);
-	var rowSize = (canvas.height/rows);
-	var snakeX = [];
-	var snakeY = [];
-	var foodX, foodY, killTail = true;
-	var grid;
-	var startingTime, ticks = 0;
+	$( document ).ready(function() {
+	canvas = document.getElementById("c");
+	ctx = canvas.getContext("2d");
+	startingLength = 5;
+	x = 0
+	y = 0
+	direction = 2;
+	length = 5
+	columns = 50
+	rows = 50;
+	columnSize = (canvas.width/columns);
+	rowSize = (canvas.height/rows);
+	snakeX = [];
+	snakeY = [];
+	killTail = true;
+	ticks = 0;
+
+	});
 	var go = function() {
 		document.getElementById("b").innerHTML = "Restart";
 		ticks = 0;
