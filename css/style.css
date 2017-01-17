@@ -45,16 +45,13 @@ body, html {
 
 
 
-*{
-    margin:0 0 6px;
-}
 header{
     text-align:left;
     color:white;
     background-color:#134;
     padding:30px 150px;
 }
-body {
+body {    margin:0 0 6px;
     background-color: #CCE0DF;  /*  Use the Color Picker to find the hex code of your favorite color */
     text-align: center;         /*                  http://www.w3schools.com/tags/ref_colorpicker.asp */
 }
