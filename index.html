@@ -31,25 +31,42 @@
 		</script>
 
 		<div id="content">
-		<p>Hi! I'm a CS student that does a lot of VGC programming as well as game development.</p>
-		<p>I'm a developer <a href="https://twitter.com/TrainerTower">@TrainerTower</a> and <a href="https://twitter.com/RNGParty">@RNGParty</a>.</p>
-		<p>My VGC tools will be always <i>open source, open license, and free</i> for the foreseeable future. Any <a href="https://www.paypal.me/squirrelboyVGC">donations</a> are appreciated, as I am an undergraduate who codes these on his own time.</p>
+			<p>Hi! I'm a CS student that does a lot of VGC programming as well as game development.</p>
+			<p>I'm a developer <a href="https://twitter.com/TrainerTower">@TrainerTower</a> and <a href="https://twitter.com/RNGParty">@RNGParty</a>.</p>
+			<p>My VGC tools will be always <i>open source, open license, and free</i> for the foreseeable future. Any <a href="https://www.paypal.me/squirrelboyVGC">donations</a> are appreciated, as I am an undergraduate who codes these on his own time.</p>
+			<p>- <i>Jake White</i></p>
+		</div>
+		<div id="columns">
 			<h1>My Work</h1>
-			<div class="work">
-				<ul>
-					<li><a href="http://trainertower.com/damagecalc">VGC Damage Calculator</a></li>
-					<li><a href="http://trainertower.com/usage-stats">VGC Showdown Stats</a></li>
-					<li><a href="https://jake-white.github.io/Battlespotspecial">VGC Battlespot Stats</a></li>
-					<li><a href="https://jake-white.github.io/VGC-Team-Sheets">VGC Teamsheet Generator</a></li>
-					<li><a href="https://jake-white.github.io/bReakMyTeam">VGC bReakMyTeam</a></li>
-				</ul>
+			<div id="column1">
+				<h2>Completed Tools</h2>
+				<div id="work">
+					<a href="http://trainertower.com/damagecalc">VGC Damage Calculator</a><a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub</a>
+					<p>Pokemon Damage Calculator adapted for VGC.</p>
+					<a href="http://trainertower.com/usage-stats">VGC Showdown Stats</a><a href="https://github.com/jake-white/VGC-Usage">GitHub</a>
+					<p>VGC 2017 Showdown usage statistics formatted and parsed into HTML.</p>
+					<a href="https://jake-white.github.io/Battlespotspecial">VGC Battlespot Stats</a><a href="https://github.com/jake-white/Battlespotspecial">GitHub</a>
+					<p>VGC 2016 BattleSpot usage statistics formatted and parsed into HTML.</p>
+					<a href="https://jake-white.github.io/VGC-Team-Sheets">VGC Teamsheet Generator</a><a href="https://github.com/jake-white/VGC-Team-Sheets">GitHub</a>
+					<p>VGC 2017 Showdown-to-teamsheet generator.</p>
+					<a href="https://jake-white.github.io/bReakMyTeam">VGC bReakMyTeam</a><a href="https://github.com/jake-white/bReakMyTeam">GitHub</a>
+					<p>bReakMyTeam Analysis reformatted and adapted for VGC 2016.</p>
+				</div>
+				<p style="text-align:left">Here's some AI Snake for no reason at all.</p>
+				<button type = "button" id = "b" onclick = "go();">Start</button>
+				<p style="text-align:left" id = "tick">Lived for: 0 ticks</p>
+				<canvas id = "c" width = "500" height = "500" style = "border: black 1px solid"></canvas>
 			</div>
-			<br>
-			<p>Here's some AI Snake for no reason at all.</p>
-			<button type = "button" id = "b" onclick = "go();">Start</button>
-			<p id = "tick">Lived for: 0 ticks</p>
-			<canvas id = "c" width = "500" height = "500" style = "border: black 1px solid"></canvas>
+			<div id="column2">
+				<h2>In Development</h2>
+				<p>Currently, I'm working on adapting the team submission used for the <a href="https://battlefy.com/melbourne-challenge/melbourne-challenge/585dcdfb4d6ae5390385a7a6/info">Melbourne Challenge</a> to a larger audience. The goal is to adapt it to general tournament usage. In the future, it will likely allow for hands off team submissions and dynamic tournament creation. In addition, I'm working to allow for more secure authentication and abuse-prevention features.</p>
+				<p>I'm also continually doing stuff at Trainer Tower and updating some of their tools that you see on the left.</p>
+				<p>On the side, I'm developing an indie game at RNG Party under the name of "For Home". More details on that later.</p>
+				<p>For updates on all of these, please follow me on Twitter <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>!</p>
 			</div>
+		</div>
+		<br>
+		
 	</body>
 </html>
 

@@ -38,8 +38,9 @@ body, html {
 }
 
 #content {
+    margin: 10px auto;
 	margin-left: 1em;
-	padding-bottom: 10px	
+	padding-bottom: 10px;
 }
 
 
@@ -51,32 +52,73 @@ header{
     background-color:#134;
     padding:30px 150px;
 }
-body {    margin:0 0 6px;
-    background-color: #CCE0DF;  /*  Use the Color Picker to find the hex code of your favorite color */
-    text-align: center;         /*                  http://www.w3schools.com/tags/ref_colorpicker.asp */
+body {    
+    background-color: #CCE0DF;
 }
 
-li, li a{                       /* Define the formatting for the links to the labs */
-    list-style: none;
+#work {
+    text-align: left;
+}
+
+#work a{
     background-color: #43ABA4;
     text-align: center;
     color: white;
-    border-radius: 3px;
     padding: 2px;
-    width: 15%;
-    margin: 5px auto;
+    line-height: 100%;
+    border: 2px solid black;
+    display: inline-block;
     text-decoration: none;
 }
 
-p{
+#columns{
+    padding: 0;
+    margin: 0 auto;
+    height:94vh;
+    width: 90%;
+}
+
+#column1{
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-right: 10%;
+
+}
+
+#column2{
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+
+#columns p{
+    margin: 5px;
+    text-align: left;
     font-size: 20px;
-    margin: 10px auto;
-    font-family: "Times New Roman";
+}
+
+#column2 p{
+    text-indent: 50px;
+    margin: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#content p{
+    margin: 5px auto;
     text-align: center;
-    width: 50%;
+    font-size: 20px;
+    width: 40%;
+}
+
+h1{
+    text-align: left;
 }
 
 h2{
+    text-align: left;
     width: 100%;
     color: #1E6E68;
     line-height: 40px;
@@ -84,21 +126,9 @@ h2{
 h3{
     color: #1E6E68;
     line-height: 30px;
-    text-align: center;
 }
 
-#work{           /* Define the formatting for the <div id="asssignments"> box */
-    width: 720px;
-    box-shadow: 0 2px 15px #EEE;
-    min-height: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: white;
-}
-#work ul {
-}
-
-hr{                     /* Define the formatting for the <hr /> line between "Course Work" and lab links */
+hr{
     margin: 10px 0;
     width: 100%;
     size: 600;
@@ -111,7 +141,7 @@ button[type="button"], button[type="reset"], button[type="submit"] {
     border: 1px solid #7aa5d6;
     color: #333;
     font-family: Verdana;
-    padding: 2px; /* padding: 2px 25px; */
+    padding: 2px;
     margin-left: auto;
     margin-right: auto;
 }
