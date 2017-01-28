@@ -4,6 +4,21 @@ body, html {
     font-family: Open Sans;
 }
 
+#adcontent {
+    display: block;
+    margin: auto;
+    width: 468px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+#pw_adbox_79789_1_0 {
+    margin-left: 1em;
+    padding-bottom: 10px;
+    display:inline-block;
+    text-align: center;
+}
+
 .wrapper{
     max-width:1247px;
 }
