@@ -1,97 +1,159 @@
-<html>
-	<head>
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/snake.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">	
-	    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	    <link rel="icon" type="image/png" href="beastball.png" />
-		<title>Jake's Github</title>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-	<!-- Project Wonderful Ad Box Loader -->
-	<script type="text/javascript">
-	   (function(){function pw_load(){
-	      if(arguments.callee.z)return;else arguments.callee.z=true;
-	      var d=document;var s=d.createElement('script');
-	      var x=d.getElementsByTagName('script')[0];
-	      s.type='text/javascript';s.async=true;
-	      s.src='//www.projectwonderful.com/pwa.js';
-	      x.parentNode.insertBefore(s,x);}
-	   if (window.attachEvent){
-	    window.attachEvent('DOMContentLoaded',pw_load);
-	    window.attachEvent('onload',pw_load);}
-	   else{
-	    window.addEventListener('DOMContentLoaded',pw_load,false);
-	    window.addEventListener('load',pw_load,false);}})();
-	</script>
-	<!-- End Project Wonderful Ad Box Loader -->
+    <title>Jake's Github</title>
+    <link rel="icon" type="image/png" href="beastball.png" />
 
-	<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      ga('create', 'UA-71936684-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-	<div class="header"><div class="wrapper">
-		            <span class="nav"><a href="https://jake-white.github.io">My Home</a> | <a href="https://twitter.com/squirrelboyVGC">Twitter Page</a> | <a href="https://github.com/jake-white/">GitHub Page</a> | <a href="https://www.paypal.me/squirrelboyVGC">Donate</a> | <a href="privacypolicy.html">Privacy Policy</a></span>
-		            <div style="clear:both"></div>
-	</div></div>
-	<body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-	<div id="adcontent">
-	<!-- Project Wonderful Ad Box Code -->
-			<div id="pw_adbox_79789_1_0"></div>
-			<script type="text/javascript"></script>
-			<noscript><map name="admap79789" id="admap79789"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=79789&type=1" shape="rect" coords="0,0,468,60" title="" alt="" target="_blank" rel="noopener noreferrer" /></map>
-			<table cellpadding="0" cellspacing="0" style="width:468px;border-style:none;background-color:#ffffff;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=79789&type=1" style="width:468px;height:60px;border-style:none;" usemap="#admap79789" alt="" /></td></tr><tr><td style="background-color:#ffffff;" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=79789&type=1" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0</a></center></td></tr></table>
-			</noscript>
-			<!-- End Project Wonderful Ad Box Code -->
-	</div>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://github.com/jake-white"><img src="images/gh32.png"></a>
+          <a class="navbar-brand" href="https://github.com/jake-white">Github</a>
+          <a class="navbar-brand" href="https://twitter.com/squirrelboyVGC">Twitter</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <p>Hi! I'm a CS student at IUPUI.</p>
+        <p>I mostly do web development (primarily in the form of VGC tools) and game development.</p>
+        <p>I'm a developer <a href="https://twitter.com/TrainerTower">@TrainerTower</a> and <a href="https://twitter.com/RNGParty">@RNGParty</a>.</p>
+        <p>- Jake White</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>VGC</h2>
+            <p>I'm a <a href="http://www.pokemon.com/us/play-pokemon/pokemon-events/pokemon-tournaments/">Pokémon VGC</a> player who develops a lot of well-known tools for the community.</p>
+            <div class="col-md-4">
+              <h2>Damage Calculator</h2>
+              <p>I develop and run the main damage calculator used in the VGC community. It was unofficially forked from the <a href="http://nuggetbridge.com/">Nuggetbridge</a> calculator (RIP) which I also helped maintain. It has since moved to <a href="http://www.trainertower.com">Trainer Tower</a> where it currently lives.</p>
+              <p>
+                <a class="btn btn-primary" href="http://trainertower.com/damagecalc/" role="button">Site &raquo;</a>
+                <a class="btn btn-default" href="https://github.com/jake-white/VGC-Damage-Calculator" role="button">Github</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>Showdown Usage</h2>
+              <p>Thanks to <a href="https://twitter.com/InfiniteAntar">@Antar</a>, I have been able to collect and display relevant from Pokémon Showdown's VGC ladder. Currently hosted on <a href="http://www.trainertower.com">Trainer Tower</a>.</p>
+              <p>
+                <a class="btn btn-primary" href="http://trainertower.com/usage-stats/" role="button">Site &raquo;</a>
+                <a class="btn btn-default" href="https://github.com/jake-white/VGC-Usage" role="button">Github</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>Battlespot Usage</h2>
+              <p>In a similar vein to the Showdown Usage, I've scraped stats from the official on-cartridge database that is hosted on <a href="https://3ds.pokemon-gl.com/">Pokémon Global Link</a> (Credit to Ferretsroq for detailing the process). Currently hosted on <a href="http://www.trainertower.com">Trainer Tower</a>.</p>
+              <p>
+                <a class="btn btn-primary" href="http://www.trainertower.com/WCS-battle-spot-usage/" role="button">Site &raquo;</a>
+                <a class="btn btn-default" href="https://github.com/jake-white/VGC-Battlespot-Usage" role="button">Github</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>Teamsheet Generator</h2>
+              <p>Tool made to generate officially formatted teamsheets based on Pokemon Showdown paste input.</p>
+              <p>
+                <a class="btn btn-primary" href="https://jake-white.github.io/VGC-Team-Sheets" role="button">Site &raquo;</a>
+                <a class="btn btn-default" href="https://github.com/jake-white/VGC-Team-Sheets" role="button">Github</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Game Development</h2>
+            <p>Not much here at the moment, but there will be in the future. Gamedev is my hobby, and I'm actively working on a couple of projects as part of <a href="https://twitter.com/RNGParty">RNG Party</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Other</h2>
+            <p>Here's some random side projects I've made.</a></p>
+            <div class="col-md-4">
+              <h2>PyCaster</h2>
+              <p>Raycasting engine made for CSCI23000 final project.</p>
+              <p>
+                <a class="btn btn-primary" href="https://github.com/jake-white/PyCaster" role="button">Github &raquo;</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>JRay</h2>
+              <p>PyCaster in Java made for CSCI24000 final project. Includes "full" 3D elements, variable heights, realtime hitscan + projectile combat, etc.</p>
+              <p>
+                <a class="btn btn-primary" href="https://github.com/jake-white/PyCaster" role="button">Github &raquo;</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
 
+      </div>
 
-		<div id="content">			
-			<p>Hi! I'm a CS student that does a lot of VGC programming as well as game development.</p>
-			<p>I'm a developer <a href="https://twitter.com/TrainerTower">@TrainerTower</a> and <a href="https://twitter.com/RNGParty">@RNGParty</a>.</p>
-			<p>My VGC tools will be always <i>open source, open license, and free</i> for the foreseeable future. Any <a href="https://www.paypal.me/squirrelboyVGC">donations</a> are appreciated, as I am an undergraduate who codes these on his own time.</p>
-			<p>- <i>Jake White</i></p>
-		</div>
-		<div id="columns">
-			<h1>My Work</h1>
-			<div id="column1">
-				<h2>Completed Tools</h2>
-				<div id="work">
-					<a href="http://trainertower.com/damagecalc">VGC Damage Calculator</a><a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub</a>
-					<p>Pokemon Damage Calculator adapted for VGC.</p>
-					<a href="http://trainertower.com/usage-stats">VGC Showdown Stats</a><a href="https://github.com/jake-white/VGC-Usage">GitHub</a>
-					<p>VGC 2017 Showdown usage statistics formatted and parsed into HTML.</p>
-					<a href="https://jake-white.github.io/VGC-Battlespot-Usage">VGC 2017 Battlespot Stats</a><a href="https://github.com/jake-white/VGC-Battlespot-Usage">GitHub</a>
-					<p>VGC 2017 BattleSpot usage statistics formatted and parsed into HTML.</p>
-					<a href="https://jake-white.github.io/Battlespotspecial">VGC 2016 Battlespot Stats</a><a href="https://github.com/jake-white/Battlespotspecial">GitHub</a>
-					<p>VGC 2016 BattleSpot usage statistics formatted and parsed into HTML.</p>
-					<a href="https://jake-white.github.io/VGC-Team-Sheets">VGC Teamsheet Generator</a><a href="https://github.com/jake-white/VGC-Team-Sheets">GitHub</a>
-					<p>VGC 2017 Showdown-to-teamsheet generator.</p>
-					<a href="https://jake-white.github.io/bReakMyTeam">VGC bReakMyTeam</a><a href="https://github.com/jake-white/bReakMyTeam">GitHub</a>
-					<p>bReakMyTeam Analysis reformatted and adapted for VGC 2016.</p>
-				</div>
-				<p style="text-align:left">Here's some AI Snake for no reason at all.</p>
-				<button type = "button" id = "b" onclick = "go();">Start</button>
-				<p style="text-align:left" id = "tick">Lived for: 0 ticks</p>
-				<canvas id = "c" width = "500" height = "500" style = "border: black 1px solid"></canvas>
-			</div>
-			<div id="column2">
-				<h2>In Development</h2>
-				<p>Currently, I'm working on adapting the team submission used for the <a href="https://battlefy.com/melbourne-challenge/melbourne-challenge/585dcdfb4d6ae5390385a7a6/info">Melbourne Challenge</a> to a larger audience. The goal is to adapt it to general tournament usage. In the future, it will likely allow for hands off team submissions and dynamic tournament creation. In addition, I'm working to allow for more secure authentication and abuse-prevention features.</p>
-				<p>I'm also continually doing stuff at Trainer Tower and updating some of their tools that you see on the left.</p>
-				<p>On the side, I'm developing an indie game at RNG Party under the name of "For Home". More details on that later.</p>
-				<p>For updates on all of these, please follow me on Twitter <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>!</p>
-			</div>
-		</div>
-		<br>
-		
-	</body>
+      <hr>
+
+      <footer>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
