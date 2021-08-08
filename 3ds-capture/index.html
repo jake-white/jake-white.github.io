@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3DS Capture</title>
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://github.com/jake-white">Github</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <p>Hi! I sell preinstalled 3DS capture cards and other custom electronics <a href="https://www.etsy.com/shop/squirrelectronics">here</a>.</p>
+        <p>I also take custom commissions on <a href="https://twitter.com/squirrelboyVGC">my Twitter</a>, please DM me to inquire about them.</p>
+        <p>This page will help you setup and troubleshoot your 3DS capture card. <b>Note that I don't develop the viewer software and can't provide support for it.</b> Below is a quick tutorial and the best usage based on my experience.</p>
+        <p>- squirrelectronics</p>
+      </div>
+    </div>    
+
+    <div class="container">
+      <!-- Example row of columns -->
+
+
+      <div class="row">
+        <div class="panel panel-default">
+            <img style="width: 50%" src="../images/capture.png">
+          <div class="panel-body">
+            <h2>Setup</h2>
+            <p><b>To start, download the 3DS viewer program: <a href="http://blog-non-standard.blogspot.com/">Windows</a> | <a href="http://blog-non-standard.blogspot.com/2021/03/mac-osx.html">Mac</a>. (n3DS_view for Old 3DS, new3DS_view for New 3DS)</b></p>
+            <p>1. Use the included USB cable, or any working data cable, to plug in your 3DS to your computer.</p>
+            <p>2. Install the driver in the driver folder of the viewer program (install_driver.exe).</p>
+            <p>3. Once the driver is installed, launch the viewer program (n3DS_view.exe).</p>
+            <p>4. The card will initialize, and prompt you to type in the product key (included with your capture card). If this doesn't happen, try replugging your 3DS or restarting the program. You can also click File > Change the product key.</p>
+            <p>5. Your 3DS screens should now be showing up on the program :)</p>
+          </div>
+          <div class="panel-body">
+            <h2>Relevant Settings</h2>
+            <p>Config > Transfer Mode: If you need audio via the capture card, you will probably want to set this to RGB888 (full). Otherwise I recommend the (middle) or (light) option and using an audio cable via the headphone jack if you need audio through the PC.</p>
+            <p>Config > BackBuffer Size: Higher resolution will result in a crisper image but may require more processing power.</p>
+            <p>Config > Calibration: The correct values may vary between installs. I typically use default values but change the Lower Screen CLOCK to around 8. If you experience discoloration or artifacting, play around with these values until you get a crisp image.</p>
+            <p>Config > Separate the lower screen: Separates the screen into two windows for easier streaming capture.</p>
+            <p>Config > Sound settings: Select your sound device to hear audio via the capture card if you are running in one of the audio Transfer Modes.</p>
+            <p>Filtering: Pixel filter options.</p>
+            <p>Size adj: Scale the screen to a pixel perfect value.</p>
+            <p>Display: Settings for changing the positions of the screens.</p>
+            <p>Ratio of scrn: Change ratio between top and bottom screens.</p>
+          </div>
+          <div class="panel-body">
+            <h2>Troubleshooting</h2>
+            <p>If the screens aren't displaying, replugging the cable or restarting the program/computer typically works.</p>
+            <p>If you have audio stutter, your computer is struggling. Try increasing the Thread Priority > Sound or decreasing the BackBuffer Size. Otherwise, switch the a lighter Transfer Mode and just use an audio cable via the headphone jack.</p>
+            <p>If you have discoloration and artifacting, check the Config > Calibration.</p>
+            <p>If you have lost the product key, message me on Twitter, Etsy, or Ebay.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+      <div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
