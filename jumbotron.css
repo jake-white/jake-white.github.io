@@ -21,8 +21,12 @@ img {
   text-align: center;
 }
 
-.col-md-5 {
-  width:49%
+.col-md-5, .col-md-4 {
+  max-width:100%
+}
+
+.row {
+  max-width: 100%;
 }
 
 .container {
