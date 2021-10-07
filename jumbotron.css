@@ -27,4 +27,5 @@ img {
 
 .container {
   width: 1300px;
+  max-width: 50%;
 }
