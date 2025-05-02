@@ -74,6 +74,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 70%;
     gap: 0px;
+    height: 0%; /*to stop the nav bar from pulling apart the grid tiles >_> */
 }
 
 .blob {
