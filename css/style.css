@@ -1,10 +1,14 @@
 html {
-    background-color: #09090f;
+    background-color: #1b1b2d;
     color: #ffeeee;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+body {
+    margin: 0;
 }
 
 .layout {
@@ -18,12 +22,7 @@ a {
 
 .navigation {
     width: 30%;
-    height: 100%;
-}
-
-.navigation > iframe {
-    border: none;
-    height: 100%;
+    min-height: 100%;
 }
 
 .nav-blob {
@@ -33,7 +32,7 @@ a {
     text-align: center;
     font-size: 2em;
     background-color: #1b1b2d;
-    clip-path: inset(3% round 5%);
+    height: 100%;
 }
 
 .role {
@@ -51,8 +50,9 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 70%;
+    gap: 0px;
 }
 
 .blob {
@@ -64,8 +64,8 @@ a {
     overflow: hidden;
     font-size: 2em;
     aspect-ratio: 1.3;
-    clip-path: inset(7% round 15%);
-    transition: clip-path 0.3s;
+    clip-path: inset(0px);
+    transition: clip-path 0.5s;
 }
 
 .blob-overlay {
@@ -92,7 +92,7 @@ a {
 
 .blob:hover {
     background-color: black;
-    clip-path: inset(1% round 2%);
+    clip-path: inset(7% round 5%);
     transition: clip-path 0.3s;
 }
 
