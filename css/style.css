@@ -293,7 +293,7 @@ a {
         margin: 10px;
     }
 
-    .container-parent p {
+    .container-parent > p {
         margin: 10px;
         font-size: 2em;
     }
