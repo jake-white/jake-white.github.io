@@ -95,6 +95,17 @@ a {
     margin: 10px 0 10px 0;
 }
 
+.container-parent {
+    display:flex;
+    flex-direction: column;
+    width:70%;
+}
+
+.container-parent > .container {
+    width: calc(100% - 10px);
+    height: auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, calc(25%));
