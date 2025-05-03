@@ -276,7 +276,7 @@ a {
         font-size: 2em;
     }
     .role {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .blob {
@@ -296,7 +296,7 @@ a {
     }
 
     .project p {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .project h1 {
@@ -304,7 +304,7 @@ a {
     }
 
     .container-parent p {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 @media only screen and (max-width: 600px) {
