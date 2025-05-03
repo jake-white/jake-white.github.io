@@ -1,3 +1,4 @@
 function loadsidebar() {
-    $('.navigation').load('../nav.html')
+    $('.navigation').load('../nav.html');
+    console.log($('.navigation'));
 }

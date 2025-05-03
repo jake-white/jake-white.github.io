@@ -18,6 +18,9 @@ body {
 
 a {
     color: #ffeeee;
+}
+
+.categories > a {
     text-decoration: none;
 }
 
@@ -56,6 +59,16 @@ a {
 }
 
 .socials > a > img {
+    height: 100%;
+}
+
+.icons {
+    height: 40px;
+    margin: 5px;
+}
+
+.icons > img {
+    padding-right: 5px;
     height: 100%;
 }
 
@@ -100,7 +113,7 @@ a {
 }
 
 .blob-overlay > .title-tag {
-    background-color: rgba(0,0,0, 0.7);
+    background-image: linear-gradient(to right, rgba(0,0,0,0) -10%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 110%);
     text-align: center;
     overflow: visible;
 }
@@ -148,11 +161,40 @@ a {
     background-color: rgba(148, 138, 120, 0.34);
 }
 
+.project {
+    margin-right: 10px;
+    width: 50%;
+}
+
+.project-content > iframe {
+    aspect-ratio: 16/9;
+}
+
+.project-content > .steam-embed {
+    background-color: transparent;
+}
+
+.project-columns {
+    display:flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.project-columns > div {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0
+}
+
 /* mobile formatting */
 @media only screen and (max-width: 1024px) {
     .layout {
         display:flex;
         flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
     }
 
     .container {
