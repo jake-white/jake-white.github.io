@@ -5,10 +5,12 @@ html {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    height: 100%;
 }
 
 .layout {
@@ -27,6 +29,12 @@ a {
 .categories {
     font-weight: 400;
     font-size: 1em;
+}
+
+.categories p, .socials {
+    background-image: linear-gradient(to right, #1b1b2d, black, #1b1b2d);
+    text-align: center;
+    padding: 5px;
 }
 
 .navigation {
@@ -51,12 +59,14 @@ a {
 
 .socials {
     height: 30px;
-    margin: 5px;
+    padding: 5px;
 }
-.socials > a {
+
+.socials a {
     padding: 5px;
     height: 100%;
 }
+
 
 .socials > a > img {
     height: 100%;
@@ -84,10 +94,19 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 70%;
+    grid-template-columns: repeat(4, calc(25%));
+    width: calc(70% - 10px);
     gap: 0px;
     height: 0%; /*to stop the nav bar from pulling apart the grid tiles >_> */
+    background-color: #050509;
+    border: 5px solid #050509;
+}
+
+.blob-feature-left {
+    grid-area: 1/1/3/3;
+}
+.blob-feature-right {
+    grid-area: 1/3/3/5;
 }
 
 .blob {
@@ -98,9 +117,29 @@ a {
     align-items: center;
     overflow: hidden;
     font-size: 2em;
-    aspect-ratio: 1.3;
+    aspect-ratio: 4/3;
     clip-path: inset(0px);
     transition: clip-path 0.5s;
+    border: 5px solid #050509;
+}
+
+.filler-blob {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    clip-path: inset(0px);
+    border: 5px solid #050509;
+}
+
+.double-filler-blob {
+    width:200%;
+}
+
+.triple-filler-blob {
+    width:300%;
 }
 
 .blob-overlay {
@@ -124,6 +163,7 @@ a {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 
 .blob:hover {
     background-color: black;
@@ -187,6 +227,12 @@ a {
 }
 
 /* mobile formatting */
+@media only screen and (max-width: 1800px) {
+    .blob {
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .layout {
         display:flex;
@@ -198,7 +244,7 @@ a {
     }
 
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
     }
 
@@ -206,5 +252,18 @@ a {
         min-height: 200px;
         height: 100%;
         width: 100%
+    }
+
+    .blob-feature-left {
+        grid-area: auto;
+    }
+    .blob-feature-right {
+        grid-area: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr;
     }
 }
