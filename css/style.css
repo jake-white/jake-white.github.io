@@ -62,7 +62,7 @@ a {
 }
 
 .socials {
-    height: 30px;
+    height: 1em;
     padding: 5px;
 }
 
@@ -241,12 +241,6 @@ a {
 }
 
 /* mobile formatting */
-@media only screen and (max-width: 1800px) {
-    .blob {
-        font-size: 1.5em;
-    }
-}
-
 @media only screen and (max-width: 1024px) {
     .layout {
         display:flex;
@@ -262,6 +256,10 @@ a {
         width: 100%;
     }
 
+    .container-parent {
+        width: 100%;
+    }
+
     .navigation {
         min-height: 200px;
         height: 100%;
@@ -273,6 +271,40 @@ a {
     }
     .blob-feature-right {
         grid-area: auto;
+    }
+    .nav-blob > h1 {
+        font-size: 2em;
+    }
+    .role {
+        font-size: 1em;
+    }
+
+    .blob {
+        font-size: 3em;
+    }
+
+    .categories {
+        font-size: 2em;
+    }
+
+    .project {
+        margin: 10px;
+    }
+
+    .container-parent {
+        margin: 10px;
+    }
+
+    .project p {
+        font-size: 1.5em;
+    }
+
+    .project h1 {
+        font-size: 3em;
+    }
+
+    .container-parent p {
+        font-size: 1.5em;
     }
 }
 @media only screen and (max-width: 600px) {
