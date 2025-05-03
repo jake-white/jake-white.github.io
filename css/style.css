@@ -39,6 +39,7 @@ a {
     background-image: linear-gradient(to right, #1b1b2d, black, #1b1b2d);
     text-align: center;
     padding: 5px;
+    margin: 0 0 1em 0;
 }
 
 .navigation {
@@ -273,7 +274,7 @@ a {
         grid-area: auto;
     }
     .nav-blob > h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
     .role {
         font-size: 1.5em;
@@ -287,23 +288,13 @@ a {
         font-size: 2em;
     }
 
-    .project {
-        margin: 10px;
-    }
-
-    .container-parent {
-        margin: 10px;
-    }
-
-    .project p {
+    .project:not(.container) {
         font-size: 2em;
-    }
-
-    .project h1 {
-        font-size: 3em;
+        margin: 10px;
     }
 
     .container-parent p {
+        margin: 10px;
         font-size: 2em;
     }
 }
