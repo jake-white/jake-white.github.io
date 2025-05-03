@@ -297,6 +297,15 @@ a {
         margin: 10px;
         font-size: 2em;
     }
+
+    .socials {
+        height: 2em;
+    }
+
+    .socials a {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
 }
 @media only screen and (max-width: 600px) {
 
