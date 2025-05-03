@@ -18,6 +18,10 @@ body {
     flex-direction: row;
 }
 
+h1 {
+    font-weight: 400;
+}
+
 a {
     color: #ffeeee;
 }
@@ -88,7 +92,6 @@ a {
 }
 
 .nav-blob > h1 {
-    font-weight: 400;
     margin: 10px 0 10px 0;
 }
 
